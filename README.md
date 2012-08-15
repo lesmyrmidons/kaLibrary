@@ -1,7 +1,7 @@
 kaLibrary PHP SDK
 =================
 This is a library providing classes for dealing with strings.
-//C'est une librairie offrent des classes permettant de traiter des chaines de caractères.
+#C'est une librairie offrent des classes permettant de traiter des chaines de caractères.
 
 Usage
 -----
