@@ -106,4 +106,31 @@ class KaString
 
         return $finalFilename;
     }
+    
+    /**
+     * 
+     * 
+     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @param unknown_type $string
+     * @return string
+     */
+    public static function upperCamelCase($string)
+    {
+        $str = preg_replace('/[_-]+/', ' ', $string);
+        $str = ucwords($str);
+        return str_replace(' ', '', $str);
+    }
+    
+    /**
+     * 
+     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @param string $string
+     * @return string
+     */
+    public static function lowerCamelCase($string)
+    {
+        $str = preg_replace('/[_-]+/', ' ', $string);
+        $str = lcfirst(ucwords($str));
+        return str_replace(' ', '', $str);
+    }
 }

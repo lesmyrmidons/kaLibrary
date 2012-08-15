@@ -9,7 +9,8 @@ Usage
 #### Upload file
 Allow you to format the file name by removing all special characters, replacing
 spaces with dashes and adding a unique id to certify the uniqueness of each file.
-exemple :
+
+Example :
 
 	<?php
 	
@@ -21,7 +22,8 @@ exemple :
 
 #### Validate Email
 This method is used to validate email in the standard RFC822, RFC2822, RFC1035.
-Exemple :
+
+Example :
 
 	<?php
 	
