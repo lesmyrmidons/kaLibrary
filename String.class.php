@@ -7,7 +7,7 @@
  */
 namespace kaLibrary;
 
-class KaString
+class String
 {
     /**
      * Checks the validity of an email based on the standards RFC822, RFC2822, RFC1035

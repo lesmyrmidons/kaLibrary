@@ -1,12 +1,12 @@
 <?php 
-require_once 'KaString.class.php';
-use kaLibrary\KaString;
+require_once 'String.class.php';
+use kaLibrary\String;
 
 /**
  * Example format filename
  */
 $filename = " quoize ehgdfk è\"éyé\"' \"èé_ _é\"è'h100%.txt";
-$filename = KaString::formatFilename($filename);
+$filename = String::formatFilename($filename);
 
 echo $filename . "\n";
 echo "--------------------------------------\n";
@@ -18,10 +18,10 @@ $email1 = 't@test.f';
 $email2 = 'tes_er t@test.fr';
 $email3 = 'test_st@test.fr';
 
-var_dump(KaString::validateEmail($email));
-var_dump(KaString::validateEmail($email1));
-var_dump(KaString::validateEmail($email2));
-var_dump(KaString::validateEmail($email3));
+var_dump(String::validateEmail($email));
+var_dump(String::validateEmail($email1));
+var_dump(String::validateEmail($email2));
+var_dump(String::validateEmail($email3));
 echo "--------------------------------------\n";
 
 /**
@@ -29,7 +29,7 @@ echo "--------------------------------------\n";
  */
 $str = array('upper camel case', 'upper-camel-case', 'upper_camel_case');
 foreach ($str as $value) {
-    echo $value . ' => ' . KaString::upperCamelCase($value) . "\n";
+    echo $value . ' => ' . String::upperCamelCase($value) . "\n";
 }
 echo "--------------------------------------\n";
 
@@ -38,6 +38,6 @@ echo "--------------------------------------\n";
  */
 $str = array('lower camel case', 'lower-camel-case', 'lower_camel_case', 'LowerCamelCase');
 foreach ($str as $value) {
-    echo $value . ' => ' . KaString::lowerCamelCase($value) . "\n";
+    echo $value . ' => ' . String::lowerCamelCase($value) . "\n";
 }
 echo "--------------------------------------\n";
