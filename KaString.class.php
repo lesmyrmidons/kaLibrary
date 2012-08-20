@@ -83,7 +83,7 @@ class KaString
     }
 
     /**
-     * 
+     * Generates a unique file name by keeping the original name and adding a unique key
      * Génère un nom de fichier unique en gardant le nom d'origine et en ajoutant une clé unique
      * 
      * @param	string	$filename
@@ -108,10 +108,11 @@ class KaString
     }
     
     /**
-     * 
+     * Converts a string in a word by putting a capital letter for each word.
+     * Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot.
      * 
      * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
-     * @param unknown_type $string
+     * @param string $string
      * @return string
      */
     public static function upperCamelCase($string)
@@ -122,6 +123,8 @@ class KaString
     }
     
     /**
+     * Converts a string in a word by putting a capital letter for each word except the first.
+     * Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot sauf pour le premier.
      * 
      * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
      * @param string $string
@@ -133,4 +136,6 @@ class KaString
         $str = lcfirst(ucwords($str));
         return str_replace(' ', '', $str);
     }
+    
+    
 }
