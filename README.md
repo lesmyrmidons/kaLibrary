@@ -16,7 +16,7 @@ Example :
 	
 	$filename = " quoize ehgdfk è\"éyé\"' \"èé_ _é\"è'h100%.txt";
 	$filename = KaString::formatFilename($filename);
-	echo $filename; // 502bb72cddb42-test-etait-un-fichier.txt
+	echo $filename; // 502be7c9f33c6-quoize-ehgdfk-e-eye-ee-e-e-h100.txt
 
 #### Validate Email
 This method is used to validate email in the standard RFC822, RFC2822, RFC1035.
