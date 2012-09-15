@@ -1,20 +1,29 @@
 <?php
 /**
- * Cette classe permet de faire tous les traitement
- * sur une chaine.
- * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
- * @static
+ * This file contains only the class String.
  */
 namespace kaLibrary;
 
+/**
+ * Cette classe permet de faire tous les traitement
+ * sur une chaine.
+ * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
+ * @static
+ * 
+ * @since 1.0
+ * 
+ * @license For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 class String
 {
     /**
      * Checks the validity of an email based on the standards RFC822, RFC2822, RFC1035
+     * 
      * Vérifie la validité d'un mail en ce basant sur les normes RFC822, RFC2822, RFC1035
      * @link	http://atranchant.developpez.com/code/validation/
      * 
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @param	string	$value
      * @return	boolean
      * @static
@@ -34,10 +43,11 @@ class String
     }
 
     /**
-     * Returns the string $str every accent delete
-     * Retourne la chaine $str une fois tous les accent supprimer
+     * Returns the string $str every accent delete.
      * 
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * Retourne la chaine $str une fois tous les accent supprimer.
+     * 
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @param    string	$str		String to format
      * @param    string	$charset	Optional, indicate the charset you want. default is the charset UTF-8
      * @return   string
@@ -61,7 +71,7 @@ class String
     /**
      * Returns the file extension based on extensions permitted otherwise returns null
      * 
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @param	string	$fileName
      * @param	mixed	$ext
      * @return	string|null
@@ -83,12 +93,13 @@ class String
     }
 
     /**
-     * Generates a unique file name by keeping the original name and adding a unique key
-     * Génère un nom de fichier unique en gardant le nom d'origine et en ajoutant une clé unique
+     * Generates a unique file name by keeping the original name and adding a unique key.
+     * 
+     * Génère un nom de fichier unique en gardant le nom d'origine et en ajoutant une clé unique.
      * 
      * @param	string	$filename
      * @return	string
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @static
      */
     public static function formatFilename($filename)
@@ -109,9 +120,10 @@ class String
     
     /**
      * Converts a string in a word by putting a capital letter for each word.
+     * 
      * Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot.
      * 
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @param string $string
      * @return string
      */
@@ -124,9 +136,10 @@ class String
     
     /**
      * Converts a string in a word by putting a capital letter for each word except the first.
+     * 
      * Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot sauf pour le premier.
      * 
-     * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
+     * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
      * @param string $string
      * @return string
      */

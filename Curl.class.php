@@ -1,24 +1,48 @@
 <?php
 
 /**
- * @author Kévin ARBOUIN <kevin.arbouin@gmail.com>
- *
+ * This file contains only the class Curl.
  */
+
 namespace kaLibrary;
+
+/**
+ * This class allows you to handle calls curl
+ * 
+ * @author Kévin ARBOUIN <lesmyrmidons@gmail.com>
+ * 
+ * @example
+ * <?php
+ * $curl = new Curl();
+ * var_dump($curl->get($url, $data));
+ *
+ * @since 1.0
+ * 
+ * @license For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 class Curl
 {
+    /**
+     * Table of the parameters of the curl.
+     * @var array
+     */
     protected $options = array(CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HEADER => false, CURLOPT_FAILONERROR => false,
             CURLOPT_FRESH_CONNECT => true, CURLOPT_TIMEOUT => 86400,
             CURLOPT_CONNECTTIMEOUT => 10, CURLOPT_FOLLOWLOCATION => true,
             CURLINFO_HEADER_OUT => true);
 
-    private $curlInfo = null;
+    /**
+     * The result of the response of the call after the curl_getinfo().
+     * @var array $curlInfo
+     */
+    private $curlInfo = array();
 
     /**
-     * 
-     * @param unknown_type $url
-     * @param unknown_type $data
+     * GET method
+     * @param string $url
+     * @param array|string|null $data
      * @return mixed
      */
     public function get($url, $data = null)
@@ -29,9 +53,9 @@ class Curl
     }
 
     /**
-     * 
-     * @param unknown_type $url
-     * @param unknown_type $data
+     * POST method
+     * @param string $url
+     * @param array|string|null $data
      * @return mixed
      */
     public function post($url, $data = null)
@@ -45,9 +69,9 @@ class Curl
     }
 
     /**
-     * 
-     * @param unknown_type $url
-     * @param unknown_type $data
+     * PUT method
+     * @param string $url
+     * @param array|string|null $data
      * @return mixed
      */
     public function put($url, $data = null)
@@ -61,10 +85,10 @@ class Curl
     }
 
     /**
-     * 
-     * @param unknown_type $url
-     * @param unknown_type $data
-     * @return Ambigous <\kaLibrary\mixed, mixed>
+     * DELETE method
+     * @param string $url
+     * @param array|string|null $data
+     * @return mixed
      */
     public function delete($url, $data = null)
     {
@@ -74,9 +98,9 @@ class Curl
     }
 
     /**
-     * 
-     * @param unknown_type $option
-     * @param unknown_type $value
+     * Set a parameter of the call Curl.
+     * @param integer $option
+     * @param boolean|string|array $value
      */
     public function setOption($option, $value)
     {
@@ -84,7 +108,7 @@ class Curl
     }
 
     /**
-     * 
+     * Set the parameters of the call Curl.
      * @param array $options
      */
     public function setOptions(array $options)
@@ -95,7 +119,7 @@ class Curl
     }
 
     /**
-     * 
+     * The response of the call after the curl_getinfo()
      * @param  integer $opt 
      * @return boolean|string|array
      */
@@ -109,9 +133,9 @@ class Curl
     }
 
     /**
-     * 
-     * @param unknown_type $url
-     * @param unknown_type $data
+     * Initiating and executing method calls curl.
+     * @param string $url
+     * @param array|string|null $data
      * @throws Exception
      * @return mixed
      */
@@ -124,11 +148,11 @@ class Curl
 
         if (!$result = curl_exec($ch)) {
             throw new Exception(curl_error($ch), curl_errno($ch));
-        } else {
-            $this->curlInfo = curl_getinfo($ch);
-            curl_close($ch);
-            return $result;
         }
+        $this->curlInfo = curl_getinfo($ch);
+        curl_close($ch);
+        
+        return $result;
     }
 
 }
