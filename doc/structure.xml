@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a10" title="">
+  <file path="test.php" hash="d8c5f25debf3e586ee38d1a82486f4c6" package="Default">
+    <namespace-alias name="String">kaLibrary\String</namespace-alias>
+    <include line="2" type="Require Once" package="Default">
+      <name>String.class.php</name>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file test.php</error>
+    </parse_markers>
+  </file>
+  <file path="Debug.php" hash="67a5fa00d59343d0b552d412b24f711f" package="Default">
+    <docblock line="2">
+      <description><![CDATA[]]></description>
+      <long-description><![CDATA[]]></long-description>
+      <tag line="2" name="author" description="Kévin ARBOUIN &lt;kevin.arbouin@gmail.com&gt;"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="kaLibrary" line="8" package="Default">
+      <extends/>
+      <name>Debug</name>
+      <full_name>\kaLibrary\Debug</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="18" package="Default">
+        <name>varDump</name>
+        <full_name>varDump</full_name>
+        <docblock line="10">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="10" name="link" description="http://php.net/manual/en/function.var-dump.php" link="http://php.net/manual/en/function.var-dump.php"/>
+          <tag line="10" name="author" description="Kévin ARBOUIN &lt;kevin.arbouin@gmail.com&gt;"/>
+          <tag line="10" name="param" description="" type="mixed" variable="$expression">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="10" name="param" description="" type="mixed" variable="$expression...">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="10" name="return" description="" type="\kaLibrary\none">
+            <type by_reference="false">\kaLibrary\none</type>
+          </tag>
+          <tag line="10" name="static" description=""/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="40" package="Default">
+        <name>varDumpLog</name>
+        <full_name>varDumpLog</full_name>
+        <docblock line="32">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="32" name="author" description="Kévin ARBOUIN &lt;kevin.arbouin@gmail.com&gt;"/>
+          <tag line="32" name="param" description="" type="mixed" variable="$expression">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="32" name="param" description="" type="mixed" variable="$expression...">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="32" name="return" description="" type="\kaLibrary\none">
+            <type by_reference="false">\kaLibrary\none</type>
+          </tag>
+          <tag line="32" name="static" description=""/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="62" package="Default">
+        <name>printR</name>
+        <full_name>printR</full_name>
+        <docblock line="55">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="55" name="author" description="Kévin ARBOUIN &lt;kevin.arbouin@gmail.com&gt;"/>
+          <tag line="55" name="param" description="" type="mixed" variable="$expression">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="55" name="link" description="" link=""/>
+          <tag line="55" name="static" description=""/>
+        </docblock>
+        <argument line="62">
+          <name>$expression</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="69" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="69">
+          <name>$env</name>
+          <default><![CDATA['dev']]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <critical line="2" code="50008">No short description for file Debug.php</critical>
+      <error line="8" code="50000">No DocBlock was found for \kaLibrary\Debug</error>
+      <error line="10" code="50012">No short description for method varDump()</error>
+      <notice line="10" code="50013">Parameter $expression could not be found in varDump()</notice>
+      <notice line="10" code="50013">Parameter $expression... could not be found in varDump()</notice>
+      <error line="32" code="50012">No short description for method varDumpLog()</error>
+      <notice line="32" code="50013">Parameter $expression could not be found in varDumpLog()</notice>
+      <notice line="32" code="50013">Parameter $expression... could not be found in varDumpLog()</notice>
+      <error line="55" code="50012">No short description for method printR()</error>
+      <error line="69" code="50010">No DocBlock was found for method __construct()</error>
+    </parse_markers>
+  </file>
+  <file path="String.class.php" hash="f23ed21052c71c2102c3ee149f3735a1" package="Default">
+    <docblock line="2">
+      <description><![CDATA[This file contains only the class String.]]></description>
+      <long-description><![CDATA[]]></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="kaLibrary" line="18" package="Default">
+      <extends/>
+      <name>String</name>
+      <full_name>\kaLibrary\String</full_name>
+      <docblock line="7">
+        <description><![CDATA[Cette classe permet de faire tous les traitement
+sur une chaine.]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="7" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+        <tag line="7" name="static" description=""/>
+        <tag line="7" name="since" description="1.0"/>
+        <tag line="7" name="license" description="For the full copyright and license information, please view the LICENSE&#10;file that was distributed with this source code."/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="31" package="Default">
+        <name>validateEmail</name>
+        <full_name>validateEmail</full_name>
+        <docblock line="20">
+          <description><![CDATA[Checks the validity of an email based on the standards RFC822, RFC2822, RFC1035]]></description>
+          <long-description><![CDATA[<p>Vérifie la validité d'un mail en ce basant sur les normes RFC822, RFC2822, RFC1035</p>]]></long-description>
+          <tag line="20" name="link" description="http://atranchant.developpez.com/code/validation/" link="http://atranchant.developpez.com/code/validation/"/>
+          <tag line="20" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="20" name="param" description="" type="string" variable="$value">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="return" description="" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+          <tag line="20" name="static" description=""/>
+        </docblock>
+        <argument line="31">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="56" package="Default">
+        <name>removeAccents</name>
+        <full_name>removeAccents</full_name>
+        <docblock line="45">
+          <description><![CDATA[Returns the string $str every accent delete.]]></description>
+          <long-description><![CDATA[<p>Retourne la chaine $str une fois tous les accent supprimer.</p>]]></long-description>
+          <tag line="45" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="45" name="param" description="String to format" type="string" variable="$str">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="45" name="param" description="Optional, indicate the charset you want. default is the charset UTF-8" type="string" variable="$charset">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="45" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="45" name="static" description=""/>
+        </docblock>
+        <argument line="56">
+          <name>$str</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="56">
+          <name>$charset</name>
+          <default><![CDATA['utf-8']]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="80" package="Default">
+        <name>getExtension</name>
+        <full_name>getExtension</full_name>
+        <docblock line="71">
+          <description><![CDATA[Returns the file extension based on extensions permitted otherwise returns null]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="71" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="71" name="param" description="" type="string" variable="$fileName">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="71" name="param" description="" type="mixed" variable="$ext">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="71" name="return" description="" type="string|null">
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="71" name="static" description=""/>
+        </docblock>
+        <argument line="80">
+          <name>$fileName</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="80">
+          <name>$ext</name>
+          <default><![CDATA['/\.[a-zA-Z-]{2,4}$/i']]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="105" package="Default">
+        <name>formatFilename</name>
+        <full_name>formatFilename</full_name>
+        <docblock line="95">
+          <description><![CDATA[Generates a unique file name by keeping the original name and adding a unique key.]]></description>
+          <long-description><![CDATA[<p>Génère un nom de fichier unique en gardant le nom d'origine et en ajoutant une clé unique.</p>]]></long-description>
+          <tag line="95" name="param" description="" type="string" variable="$filename">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="95" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="95" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="95" name="static" description=""/>
+        </docblock>
+        <argument line="105">
+          <name>$filename</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="130" package="Default">
+        <name>upperCamelCase</name>
+        <full_name>upperCamelCase</full_name>
+        <docblock line="121">
+          <description><![CDATA[Converts a string in a word by putting a capital letter for each word.]]></description>
+          <long-description><![CDATA[<p>Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot.</p>]]></long-description>
+          <tag line="121" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="121" name="param" description="" type="string" variable="$string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="121" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="130">
+          <name>$string</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="kaLibrary" line="146" package="Default">
+        <name>lowerCamelCase</name>
+        <full_name>lowerCamelCase</full_name>
+        <docblock line="137">
+          <description><![CDATA[Converts a string in a word by putting a capital letter for each word except the first.]]></description>
+          <long-description><![CDATA[<p>Transforme une chaine de caractère en un mot en mettant une majuscule à chaque mot sauf pour le premier.</p>]]></long-description>
+          <tag line="137" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+          <tag line="137" name="param" description="" type="string" variable="$string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="137" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="146">
+          <name>$string</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Curl.class.php" hash="b4a97ce09fe8bae1c0661c35fcd1b2fc" package="Default">
+    <docblock line="3">
+      <description><![CDATA[This file contains only the class Curl.]]></description>
+      <long-description><![CDATA[]]></long-description>
+    </docblock>
+    <class final="false" abstract="false" namespace="kaLibrary" line="24" package="Default">
+      <extends/>
+      <name>Curl</name>
+      <full_name>\kaLibrary\Curl</full_name>
+      <docblock line="9">
+        <description><![CDATA[This class allows you to handle calls curl]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="9" name="author" description="Kévin ARBOUIN &lt;lesmyrmidons@gmail.com&gt;"/>
+        <tag line="9" name="example" description="&lt;?php&#10;$curl = new Curl();&#10;var_dump($curl-&gt;get($url, $data));"/>
+        <tag line="9" name="since" description="1.0"/>
+        <tag line="9" name="license" description="For the full copyright and license information, please view the LICENSE&#10;file that was distributed with this source code."/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="30" namespace="kaLibrary" package="Default">
+        <name>$options</name>
+        <default><![CDATA[array(CURLOPT_RETURNTRANSFER => true, CURLOPT_HEADER => false, CURLOPT_FAILONERROR => false, CURLOPT_FRESH_CONNECT => true, CURLOPT_TIMEOUT => 86400, CURLOPT_CONNECTTIMEOUT => 10, CURLOPT_FOLLOWLOCATION => true, CURLINFO_HEADER_OUT => true)]]></default>
+        <docblock line="26">
+          <description><![CDATA[Table of the parameters of the curl.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="26" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="40" namespace="kaLibrary" package="Default">
+        <name>$curlInfo</name>
+        <default><![CDATA[array()]]></default>
+        <docblock line="36">
+          <description><![CDATA[The result of the response of the call after the curl_getinfo().]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="36" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="48" package="Default">
+        <name>get</name>
+        <full_name>get</full_name>
+        <docblock line="42">
+          <description><![CDATA[GET method]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="42" name="param" description="" type="string" variable="$url">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="42" name="param" description="" type="array|string|null" variable="$data">
+            <type by_reference="false">array</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="42" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="48">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="48">
+          <name>$data</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="61" package="Default">
+        <name>post</name>
+        <full_name>post</full_name>
+        <docblock line="55">
+          <description><![CDATA[POST method]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="55" name="param" description="" type="string" variable="$url">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="55" name="param" description="" type="array|string|null" variable="$data">
+            <type by_reference="false">array</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="55" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="61">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="61">
+          <name>$data</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="77" package="Default">
+        <name>put</name>
+        <full_name>put</full_name>
+        <docblock line="71">
+          <description><![CDATA[PUT method]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="71" name="param" description="" type="string" variable="$url">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="71" name="param" description="" type="array|string|null" variable="$data">
+            <type by_reference="false">array</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="71" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="77">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="77">
+          <name>$data</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="93" package="Default">
+        <name>delete</name>
+        <full_name>delete</full_name>
+        <docblock line="87">
+          <description><![CDATA[DELETE method]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="87" name="param" description="" type="string" variable="$url">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="87" name="param" description="" type="array|string|null" variable="$data">
+            <type by_reference="false">array</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="87" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="93">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="93">
+          <name>$data</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="105" package="Default">
+        <name>setOption</name>
+        <full_name>setOption</full_name>
+        <docblock line="100">
+          <description><![CDATA[Set a parameter of the call Curl.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="100" name="param" description="" type="integer" variable="$option">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="100" name="param" description="" type="boolean|string|array" variable="$value">
+            <type by_reference="false">boolean</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="105">
+          <name>$option</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="105">
+          <name>$value</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="114" package="Default">
+        <name>setOptions</name>
+        <full_name>setOptions</full_name>
+        <docblock line="110">
+          <description><![CDATA[Set the parameters of the call Curl.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="110" name="param" description="" type="array" variable="$options">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="114">
+          <name>$options</name>
+          <default><![CDATA[]]></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="kaLibrary" line="126" package="Default">
+        <name>getInfo</name>
+        <full_name>getInfo</full_name>
+        <docblock line="121">
+          <description><![CDATA[The response of the call after the curl_getinfo()]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="121" name="param" description="" type="integer" variable="$opt">
+            <type by_reference="false">integer</type>
+          </tag>
+          <tag line="121" name="return" description="" type="boolean|string|array">
+            <type by_reference="false">boolean</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="126">
+          <name>$opt</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="kaLibrary" line="142" package="Default">
+        <name>request</name>
+        <full_name>request</full_name>
+        <docblock line="135">
+          <description><![CDATA[Initiating and executing method calls curl.]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="135" name="param" description="" type="string" variable="$url">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="135" name="param" description="" type="array|string|null" variable="$data">
+            <type by_reference="false">array</type>
+            <type by_reference="false">string</type>
+            <type by_reference="false">null</type>
+          </tag>
+          <tag line="135" name="throws" description="" type="\kaLibrary\Exception">
+            <type by_reference="false">\kaLibrary\Exception</type>
+          </tag>
+          <tag line="135" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="142">
+          <name>$url</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="142">
+          <name>$data</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="kaLibrary" full_name="kaLibrary"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
